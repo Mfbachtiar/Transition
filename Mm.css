@@ -1,0 +1,89 @@
+/* Gaya dasar untuk layar mobile */
+* {
+  margin: 0;
+  padding: 0;
+  color: white;
+}
+
+.p {
+  margin: 0 auto;
+  margin-bottom: 30px;
+  font-size: 14px;
+  border: 1px solid white;
+  width: 100px;
+  padding: 5px;
+  text-align: center;
+  border-radius: 10px;
+  transition: 300ms !important;
+}
+
+.p1 {
+  margin: 0 auto;
+}
+
+.p:hover {
+  background-color: #FFF;
+  color: black;
+}
+
+body {
+  background-color: #222831;
+}
+
+div {
+  font-size: 8px;
+}
+
+.container {
+  width: 80%;
+  /* Menggunakan 100% untuk menyesuaikan dengan lebar layar mobile */
+  margin: 20px auto;
+  border: 5px solid white;
+  padding: 10px;
+}
+
+.kotak {
+  width: 50px;
+  /* Ukuran awal untuk layar mobile */
+  height: 50px;
+  background-color: salmon;
+  text-align: center;
+  line-height: 50px;
+  /* Menyesuaikan line-height untuk ukuran kotak yang lebih kecil */
+  margin: 5px;
+  /* Menyesuaikan margin untuk ukuran kotak yang lebih kecil */
+  color: white;
+}
+
+.kotak1 {
+  transition: 1s ease;
+}
+
+.kotak2 {
+  transition: 1s ease-in;
+}
+
+.kotak3 {
+  transition: 1s ease-out;
+}
+
+.kotak4 {
+  transition: 1s ease-in-out;
+}
+
+.kotak5 {
+  transition: 1s linear;
+}
+
+.kotak6 {
+  transition: 1s cubic-bezier(0, 0, 0, 1.26);
+}
+
+.container:hover .kotak {
+  transform: rotate(720deg);
+  margin-left: 85%;
+  /* Menghapus margin-left saat hover untuk menghindari perilaku yang tidak diinginkan pada layar kecil */
+  background-color: blue;
+}
+
+/* Media query untuk layar dengan lebar 600px atau lebih */
