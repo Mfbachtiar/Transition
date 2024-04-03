@@ -40,6 +40,7 @@ div {
   margin: 20px auto;
   border: 5px solid white;
   padding: 10px;
+  border-radius: 10px;
 }
 
 .kotak {
@@ -53,6 +54,7 @@ div {
   margin: 5px;
   /* Menyesuaikan margin untuk ukuran kotak yang lebih kecil */
   color: white;
+  border-radius: 3px;
 }
 
 .kotak1 {
